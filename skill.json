@@ -1,0 +1,40 @@
+{
+  "name": "coupon-usage-anomaly-skill",
+  "version": "1.0.0",
+  "description": "Analyze coupon codes redemption usage patterns to detect transaction anomalies and potential coupon stacking exploits.",
+  "author": "alphaparkinc",
+  "category": "security",
+  "tags": [
+    "coupon-abuse",
+    "security",
+    "checkout",
+    "fraud-detection",
+    "e-commerce"
+  ],
+  "inputs": {
+    "coupon_code": {
+      "type": "string",
+      "description": "Redeemed promo code."
+    },
+    "daily_redeemed_count": {
+      "type": "integer",
+      "description": "Promo usage count within the last 24h."
+    },
+    "average_daily_redemptions": {
+      "type": "number",
+      "description": "Standard historical daily usage baseline."
+    }
+  },
+  "outputs": {
+    "anomaly_detected": {
+      "type": "boolean",
+      "description": "True if usage velocity exceeds standard deviation limits."
+    },
+    "risk_level": {
+      "type": "string",
+      "description": "Assessment tier: low, medium, high."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
