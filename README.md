@@ -1,4 +1,4 @@
-# coupon-usage-anomaly-skill
+# genpark-coupon-usage-anomaly-skill
 
 > **GenPark AI Agent Skill** -- Coupon abuse fraud detection auditor.
 
