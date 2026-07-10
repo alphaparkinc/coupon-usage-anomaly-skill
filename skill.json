@@ -1,5 +1,5 @@
 {
-  "name": "coupon-usage-anomaly-skill",
+  "name": "genpark-coupon-usage-anomaly-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Analyze coupon codes redemption usage patterns to detect transaction anomalies and potential coupon stacking exploits.",
   "author": "genpark",
